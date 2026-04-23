@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VAMM">
+  <style>
+    /* Default (light browser tab / unknown) — use dark logo so it shows on white */
+    .mark { fill: #1C1712; }
+    /* Dark browser tab — switch to warm gold */
+    @media (prefers-color-scheme: dark) {
+      .mark { fill: #D9946B; }
+    }
+  </style>
+  <!-- Mountain peaks (twin triangles) -->
+  <path class="mark" d="
+    M 6 48
+    L 20 22
+    L 28 34
+    L 34 26
+    L 40 34
+    L 44 28
+    L 58 48
+    Z
+  "/>
+  <!-- Pickaxe handle -->
+  <rect class="mark" x="34" y="10" width="3.2" height="22" rx="1.2"
+        transform="rotate(28 35.6 21)"/>
+  <!-- Pickaxe head (curved bar) -->
+  <path class="mark" d="
+    M 30 12
+    Q 42 6 54 14
+    L 52 17
+    Q 42 11 32 15
+    Z
+  "/>
+</svg>
