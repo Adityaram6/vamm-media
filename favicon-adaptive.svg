@@ -1,32 +1,29 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="VAMM">
-  <style>
-    /* Default (light browser tab / unknown) — use dark logo so it shows on white */
-    .mark { fill: #1C1712; }
-    /* Dark browser tab — switch to warm gold */
-    @media (prefers-color-scheme: dark) {
-      .mark { fill: #D9946B; }
-    }
-  </style>
-  <!-- Mountain peaks (twin triangles) -->
-  <path class="mark" d="
-    M 6 48
-    L 20 22
-    L 28 34
-    L 34 26
-    L 40 34
-    L 44 28
-    L 58 48
+  <!-- Dark rounded-square plate — keeps the gold mark visible on any tab colour -->
+  <rect x="0" y="0" width="64" height="64" rx="11" ry="11" fill="#0A0807"/>
+  <!-- Subtle inner border for extra definition -->
+  <rect x="0.5" y="0.5" width="63" height="63" rx="10.5" ry="10.5"
+        fill="none" stroke="#C07B52" stroke-opacity="0.28" stroke-width="1"/>
+  <!-- Mountain peaks (twin triangles) in gold -->
+  <path fill="#D9946B" d="
+    M 9 50
+    L 22 24
+    L 30 36
+    L 34 28
+    L 39 36
+    L 45 28
+    L 57 50
     Z
   "/>
   <!-- Pickaxe handle -->
-  <rect class="mark" x="34" y="10" width="3.2" height="22" rx="1.2"
-        transform="rotate(28 35.6 21)"/>
+  <rect fill="#D9946B" x="34.2" y="11" width="3" height="22" rx="1.1"
+        transform="rotate(28 35.7 22)"/>
   <!-- Pickaxe head (curved bar) -->
-  <path class="mark" d="
-    M 30 12
-    Q 42 6 54 14
-    L 52 17
-    Q 42 11 32 15
+  <path fill="#D9946B" d="
+    M 31 13
+    Q 43 7 54 15
+    L 52 18
+    Q 43 12 33 16
     Z
   "/>
 </svg>
